@@ -12,7 +12,9 @@ export const MovieCard = ({ movie }) => (
       <div className="media">
         <div className="media-left">
           <figure className="image is-48x48">
-            <img src="images/imdb-logo.jpeg" alt="imdb" />
+            <a href={movie.imdbUrl} data-cy="MovieLink">
+              <img src="images/imdb-logo.jpeg" alt="imdb" />
+            </a>
           </figure>
         </div>
 
